@@ -1,0 +1,63 @@
+extends layout
+
+
+
+block content
+
+  nav.navbar-inverse.navbar-default(role="navigation")
+    <!-- Brand and toggle get grouped for better mobile display -->
+    .navbar-header
+      a.navbar-brand(href="../index.html", title="") #{title}
+
+  .container
+    div.row
+      .col-xs-6.col-md-4
+        #styleForm
+          .fields
+            #slider-box-template.slider-box(style="display:none")
+              span.btn ☰
+              .controls-container
+                  form.adjust-light.control
+                    input.lighten.darken(type="checkbox")
+                    span LIGHTNESS
+                    input.valuetxt.lighttxt(type="text")
+
+                    .lightbar
+
+                  form.adjust-hue.control
+                    input.adjust_hue(type="checkbox")
+                    span HUE
+                    input.valuetxt.huetxt(type="text")
+
+                    .huebar
+
+                  form.adjust-saturation.control
+                    input.saturate(type="checkbox")
+                    span SATURATION
+                    input.valuetxt.saturtxt(type="text")
+
+                    .satbar
+                  .slidebtn(style='margin:0 auto; text-align:center')
+                    input.slideok(type="button", value="OK").button.green.bigrounded.small
+                    input.slidecancel(type="button", value="Cancel").button.red.bigrounded.small
+
+
+
+      .col-xs-6.col-md-4 content here
+  .navbar-footer.navbar-default
+
+
+
+    form(post="saveConfig")
+      input#submitBtn.button.blue(type="button", value="apply")
+      a#submitConfig.button.green(href="/saveConfig") Save config
+      br
+      input#autoCompile(type='checkbox', checked='checked')
+      label(for="autoCompile", style="display:inline-block;color:white;margin:2px 0 0 5px;") Automatically apply changes
+    br
+    .loading
+      img(src="/images/ajax-loader.gif")
+      span
+        span.ellipsis
+        span Loading...
+    textarea#rules(style="display:none") #{rules}

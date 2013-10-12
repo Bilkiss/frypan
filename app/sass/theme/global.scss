@@ -1,0 +1,140 @@
+@import "bootstrap/bootstrap";
+
+@import "config/config";
+@import "buttons";
+
+
+
+.navbar-default {
+  background: #222;
+  border-color: #080808;
+}
+
+.navbar-header {
+  @include clearfix;
+}
+
+label {
+  display: block;
+}
+
+// body {
+//   padding: 50px;
+//   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+//   background-color: $body-bg;
+//   color:$text-col;
+//   position: relative;
+// }
+
+// a {
+//   color: $text-col;
+// }
+
+// label{
+//   display: inline-block;
+//   margin-right:20px;
+// }
+
+ fieldset{
+   border-radius:$border-radius;
+   margin-top:$margin-top;
+   display:block;
+    -webkit-box-shadow: 2px 2px 21px rgba(50, 50, 50, 0.52);
+    -moz-box-shadow:    2px 2px 21px rgba(50, 50, 50, 0.52);
+    box-shadow:         2px 2px 21px rgba(50, 50, 50, 0.52);
+   padding:10px;
+   width:80%;
+   }
+
+//     .onefield {
+//         width: 100%;
+//         clear: both;
+//         label{
+//           width:228px;
+//           display: block;
+//         }
+//         input {
+//           margin-right:10px;
+
+//         }
+
+//     }
+
+
+ legend {
+   font-size: 26px;
+   font-family: 'Istok Web', sans-serif;
+   text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
+   margin-bottom:30px;
+ }
+
+ .loading {
+   display:none;
+   span{
+     display:inline-block;
+     margin-left:5px;
+     color:white;
+   }
+   .ellipsis {
+    color:yellow;
+    position: absolute;
+    font-size:20px;
+   }
+ }
+
+.navbar-footer {
+  position: fixed;
+  bottom: 0;
+}
+.navbar-default {
+  background: #222;
+  padding: 7px 0 10px;
+  right: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top:45px;
+}
+
+.desc, .tip {
+  font-size: 12px;
+  font-style: italic;
+  margin:0;
+  padding:0
+}
+
+.colorvalue {
+  display:inline-block;
+  margin-left:6px;
+}
+.slider-box {
+  display:inline-block;
+  height:30px;
+  width:30px;
+ span.btn{
+  border:1px ridge #000;
+ cursor:pointer;
+ margin-left:2px;
+ }
+  .controls-container{
+    display:none;
+    position:absolute;
+    border: thin black ridge;
+    padding:12px;
+    background-color:#ffffff;
+    width:160px;
+    z-index:99999;
+    .control{
+      border-bottom: black thin ridge;
+      margin-bottom:10px;
+      padding-bottom:10px;
+      input.valuetxt {
+        width:30px;
+        margin-left:5px;
+        display:inline-block;
+      }
+    }
+  }
+}

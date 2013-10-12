@@ -1,0 +1,209 @@
+/*------------------------------------*\
+    $Page
+\*------------------------------------*/
+/**
+*  Real variables used on the
+*/
+$body-bg :#1a36f9;
+$text-col :white;
+$border-radius :5px;
+$border-style :thin ridge;
+$margin-top :50px;
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+*  Debug mode will visually highlight any potential markup/accessibility quirks
+*/
+$debug-mode                       :false;
+/*------------------------------------*\
+    $THEME
+\*------------------------------------*/
+$theme-01                         :true;
+$theme-02                         :false;
+$theme-03                         :false;
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+*  Base stuff
+*/
+$wrapper-width                    :1090px;
+$main-content-padding             :20px;
+$body-background                  :white;
+$bg-home                          :$body-background url('../../../images/layout/bg/bg-home.jpg') no-repeat;
+$bg-product                       :$body-background url('../../../images/layout/bg/bg-product.jpg') no-repeat;
+$bg-category-01                   :$body-background url('../../../images/layout/bg/bg-sleep-category.jpg') no-repeat;
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+*  Generic utility styles etc.  Basic color for the text  Links  Generic colors  List of social brand colors
+*/
+$first-color                      :#cf3333;// Princpal color used
+
+$second-color                     :#000000;// orange
+
+$third-color                      :#000000;// yellow
+
+$fourth-color                     :#4ed231;
+$fifth-color                      :#548bce;
+$sixth-color                      :#cf1616;
+$seventh-color                    :#23df6f;
+$eighth-color                     :#bb29e2;
+$first-color-hover                :lighten($first-color, 6);
+$second-color-hover               :lighten($second-color, 6);
+$text-color                       :#6b6b6b;
+$headings-color                   :#00a69d;
+$link-color                       :#ae2e2e;
+$link-color-hover                 :darken($link-color, 15);
+$black                            :#000000;
+$gray-darker                      :#000000;
+$gray-dark                        :#000000;
+$gray                             :#000000;
+$gray-light                       :#000000;
+$gray-lighter                     :#000000;
+$white                            :#ffffff;
+$yellow                           :#fed205;
+$color-menu                       :#4cc6bd;
+$orange                           :#f58320;
+$facebook-color:#3b5998;
+$youtube-color:#c4302b;
+$twitter-color:#00acee;
+/*------------------------------------*\
+    $FONT
+\*------------------------------------*/
+/**
+*  Default fonts list
+*/
+$sans-font-family                 :Arial, sans-serif;
+$serif-font-family                :Georgia, 'Times New Roman', Times, serif;
+$monoFontFamily                   :Monaco, Menlo, Consolas, 'Courier New', monospace;
+$webfont-01                       :'maven';
+$default-font-family              :$sans-font-family;
+$headings-font-family             :$webfont-01;
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+*  Font-sizes (in pixels). Refer to relevant sections for their implementations.
+*/
+$base-font-size                   :16px;
+$base-line-height                 :24px;
+$x-small-font-size:10px;
+$small-font-size:12px;
+$medium-font-size:14px;
+$large-font-size:16px;
+$extra-large-font-size:18px;
+$giga-size                        :96;
+$mega-size                        :72;
+$kilo-size                        :48;
+$h1-size                          :22 ;// .alpha
+
+$h2-size                          :19 ;// .beta
+
+$h3-size                          :17 ;// .gamma
+
+$h4-size                          :15 ;// .delta
+
+$h5-size                          :12 ;// .epsilon
+
+$h6-size                          :10 ;// .zeta
+
+$milli-size                       :12;
+$micro-size                       :10;
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+$mobile                           :320px;
+$smarphone                        :480px;
+$tablet-portrait                  :768px;
+$tablet-landscape                 :1024px;
+/*------------------------------------*\
+    $BOX
+\*------------------------------------*/
+/**
+*  Set the spacing between your grid items.
+*/
+$box-margin-ext                   :0 ;// box contour
+
+$box-border-radius                :3px;
+$box-category-background          :#2eb7b0;
+$box-background                   :#000000;// if the color of category
+
+$box-top-background               :$white;
+$top-opacity                      :0.6;
+$box-height                       :400px;
+$box-middle-background            :$white;
+$box-margin-main                  :0 20px;
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+*  Navbar  Sub-navbar  Search
+*/
+$navbar__font-size                :10;
+$navbar-background                :transparent;
+$navbar-item-background-hover     :$color-menu;
+$navbar-filter-background         :$white;
+$navbar-tools-background          :#229b91;
+$navbar-link-color                :$text-color;
+$navbar-link-color-hover          :$text-color;
+$navbar-item-background           :transparent;
+$navbar-item-background-hover     :$first-color-hover;
+$navbar-tools__background--hover  :$gray-light;
+$navbar-arrow-background-color    :#fab15a;
+$navbar-padding-item:6px 10px;
+$navbar-height-item:52px;
+$sub-navbar-border-top-color      :$white;
+$sub-navbar-background            :$white;
+$filters-menu-separators          :#f7f7f7;
+$search-icon-color                :#666666;
+$search-input-border              :#000000;
+$padding-header-middle-li         :30px 0 0 0;
+$social-icon-color                :#cecece;
+$top-wrapper-height               :30px;
+$top-wrapper-border-radius        :0;
+$social-icon-facebook-color       :#456aae;
+$social-icon-twitter-color        :#39c6f4;
+$social-icon-pinterest-color      :#cf2222;
+$social-icon-googleplus-color     :#cd2d2f;
+$star-color-enable                :$yellow;
+$star-color-disable               :#ededed;
+$star-size                        :25px;
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+*  Z-index master list
+*/
+$namespace                        :'.button'  /* @ */;
+$bgcolor                          :#000000;
+$height                           :32px;
+$font-color                       :#000000;
+$font-size                        :14px;
+$font-weight                      :300;
+$font-family                      :Arial, 'Lucida Grande', sans-serif;
+$button_styles                    :'rounded' 'pill' 'circle';
+$button_sizes                     :'large' 'small' 'tiny';
+$circle-size                      :120px ;//radius for circle buttons, circles only have one size
+
+$button_actions                   :#000000;
+// $iconSpritePath                :image-path('glyphicons-halflings.png');
+// $iconWhiteSpritePath           :image-path('glyphicons-halflings-white.png');
+$tableBackground                  :transparent ;// overall background-color
+
+$tableBackgroundAccent            :#000000;// for striping
+
+$tableBackgroundHover             :#000000;// for hover
+
+$tableBorder                      :#000000;// table and cell border
+
+$paginationBackground             :#000000;
+$paginationBorder                 :#000000;
+$paginationActiveBackground       :#f5f5f5;
+$zindex-logo                      :20;
+$zindex-header-top                :9999;
+$zindex-subnavbar:30;
+$errorCodeColor                   :#ff0000;
+
